@@ -15,21 +15,21 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Archivo+Black&display=swap" rel="stylesheet" />
-	<link rel="stylesheet" href="style.css?v=2026-swiss" />
+	<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340;0,9..144,400;0,9..144,560;1,9..144,340;1,9..144,560&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="style.css?v=2026-ledger" />
 </head>
 <body>
 
-	<!-- Navigation -->
+	<!-- Masthead -->
 	<header class="nav" id="top">
-		<a href="#top" class="nav__brand">Fariza Zakaria</a>
-		<span class="nav__yr">20<b>26</b></span>
+		<a href="#top" class="nav__brand">Fariza&nbsp;Zakaria</a>
+		<span class="nav__yr">Kuala&nbsp;Lumpur</span>
 		<button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
 			<span></span><span></span><span></span>
 		</button>
 		<nav class="nav__links">
 			<a href="#about">About</a>
-			<a href="#solutions">Solutions</a>
+			<a href="#solutions">Work</a>
 			<a href="#build">What I Build</a>
 			<a href="#skills">Skills</a>
 			<a href="#contact">Contact</a>
@@ -40,151 +40,165 @@
 
 		<!-- Hero -->
 		<section class="hero" id="hero">
-			<p class="hero__eyebrow">Finance · Kuala Lumpur, Malaysia</p>
-			<h1 class="hero__title">Less busywork.<br /><span class="alt">Better workflows.</span></h1>
-			<div class="hero__card">
-				<p>
-					I build small tools, dashboards, and automations that reduce repetitive work,
-					improve reporting, and make information easier to use.
-				</p>
-				<div class="hero__cta">
-					<a href="#solutions" class="btn btn--solid">See Solutions</a>
-					<a href="#contact" class="btn">Get in touch</a>
+			<div class="hero__main">
+				<p class="hero__eyebrow intro intro-1">Finance · Kuala Lumpur, Malaysia</p>
+				<h1 class="hero__title">
+					<span class="line"><span class="line__in intro-2">Less busywork.</span></span>
+					<span class="line"><em class="line__in intro-3">Better workflows.</em></span>
+				</h1>
+				<div class="hero__row intro intro-4">
+					<p class="hero__lede">
+						I build small tools, dashboards, and automations that reduce repetitive work,
+						improve reporting, and make information easier to use.
+					</p>
+					<div class="hero__cta">
+						<a href="#solutions" class="btn btn--solid">View work</a>
+						<a href="#contact" class="btn">Get in touch</a>
+					</div>
 				</div>
 			</div>
-			<div class="motif" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+			<div class="hero__aside intro intro-4" aria-hidden="true">
+				<div class="ledgergrid" id="ledgerGrid"></div>
+				<p class="ledgergrid__cap">Checks run monthly. <span class="ledgergrid__flag" id="gridFlag">exception → routed</span></p>
+			</div>
+			<div class="hero__rule intro intro-5" aria-hidden="true"><i></i></div>
+			<div class="hero__meta intro intro-5" aria-hidden="true">
+				<span>Based in Kuala Lumpur</span>
+				<span>Open to opportunities</span>
+				<span>Scroll to explore ↓</span>
+			</div>
 		</section>
 
 		<!-- About -->
 		<section class="section" id="about">
-			<div class="section__head">
-				<span class="section__num">01.</span>
-				<h2>About</h2>
+			<div class="section__head reveal">
+				<span class="section__num">01</span>
+				<span class="section__label">About</span>
 			</div>
 			<div class="about">
-				<p>
-					I started out in finance and accounting. A lot of my early work was the usual
-					routine: reports, reconciliations, and month-end tasks that came around again and again.
-				</p>
-				<p>
-					After a while I got curious about the repetitive parts. If I was copying the same
-					numbers every month, there was probably a simpler way to do it, so I started looking
-					for one.
-				</p>
-				<p>
-					That curiosity gradually pulled me into data analytics, automation, and building small
-					internal tools. I wasn't trying to become a software developer. I just wanted to find
-					better ways of doing everyday work.
-				</p>
-				<p>
-					These days I mostly build small internal tools. Nothing fancy. Just practical things
-					that save people time, cut down on manual work, and actually get used.
-				</p>
+				<h2 class="about__pull reveal">Curiosity about the <em>repetitive parts</em> pulled me from accounting into automation.</h2>
+				<div class="about__body">
+					<p class="reveal">
+						I started out in finance and accounting. A lot of my early work was the usual
+						routine: reports, reconciliations, and month-end tasks that came around again and again.
+					</p>
+					<p class="reveal">
+						After a while I got curious about the repetitive parts. If I was copying the same
+						numbers every month, there was probably a simpler way to do it, so I started looking
+						for one.
+					</p>
+					<p class="reveal">
+						That curiosity gradually pulled me into data analytics, automation, and building small
+						internal tools. I wasn't trying to become a software developer. I just wanted to find
+						better ways of doing everyday work.
+					</p>
+					<p class="reveal">
+						These days I mostly build small internal tools. Nothing fancy. Just practical things
+						that save people time, cut down on manual work, and actually get used.
+					</p>
+				</div>
 			</div>
 		</section>
 
 		<!-- Featured Solutions -->
 		<section class="section" id="solutions">
-			<div class="section__head">
-				<span class="section__num">02.</span>
-				<h2>Featured Solutions</h2>
+			<div class="section__head reveal">
+				<span class="section__num">02</span>
+				<span class="section__label">Selected work</span>
 			</div>
-			<div class="cards">
 
-				<article class="card">
-					<div class="card__tag"><span>Revenue Assurance</span><em>01 / 04</em></div>
-					<div class="card__body">
-						<h3 class="card__title">Revenue Assurance Pipeline</h3>
-						<dl class="card__facts">
-							<div><dt>Problem</dt><dd>Billing information comes from different sources, making it difficult to spot missing invoices, duplicate charges or incorrect billing. Not every mismatch is an actual error.</dd></div>
-							<div><dt>Solution</dt><dd>Built a Python and SQL pipeline using synthetic billing data to compare records from nine sources, check for inconsistencies and flag items that need further review.</dd></div>
-							<div><dt>Value</dt><dd>Helps identify possible billing issues earlier, reduces unnecessary checks and makes it easier to understand why each item was flagged. The process is repeatable and tested with 25 automated tests.</dd></div>
-						</dl>
-						<p class="card__tech">Python · DuckDB SQL · pandas · pytest</p>
-						<p class="card__lock">🔒 Private repository | Source code not publicly available</p>
-					</div>
-				</article>
+			<article class="entry reveal">
+				<div class="entry__id">
+					<span class="entry__no">2.1</span>
+					<h3 class="entry__title">Revenue Assurance Pipeline</h3>
+					<p class="entry__tech">Python · DuckDB SQL · pandas · pytest</p>
+				</div>
+				<dl class="entry__facts">
+					<div><dt>Problem</dt><dd>Billing information comes from different sources, making it difficult to spot missing invoices, duplicate charges or incorrect billing. Not every mismatch is an actual error.</dd></div>
+					<div><dt>Solution</dt><dd>Built a Python and SQL pipeline using synthetic billing data to compare records from nine sources, check for inconsistencies and flag items that need further review.</dd></div>
+					<div><dt>Value</dt><dd>Helps identify possible billing issues earlier, reduces unnecessary checks and makes it easier to understand why each item was flagged. The process is repeatable and tested with 25 automated tests.</dd></div>
+				</dl>
+				<p class="entry__links"><span class="entry__lock">🔒 Private repository | Source code not publicly available</span></p>
+			</article>
 
-				<article class="card">
-					<div class="card__tag"><span>Fraud Analytics</span><em>02 / 04</em></div>
-					<div class="card__body">
-						<h3 class="card__title">Credit Card Fraud Detection</h3>
-						<dl class="card__facts">
-							<div><dt>Problem</dt><dd>Fraudulent transactions hide inside large volumes of card data and are hard to catch by eye.</dd></div>
-							<div><dt>Solution</dt><dd>Exploratory analysis that profiles transactions by customer behaviour, age, and location to highlight suspicious patterns.</dd></div>
-							<div><dt>Value</dt><dd>Shows how straightforward data exploration can flag the transactions worth a closer look.</dd></div>
-						</dl>
-						<p class="card__tech">R · RMarkdown</p>
-						<div class="card__links">
-							<a href="https://farizazack.github.io/Fariza_R_Portfolio/" target="_blank" rel="noopener">View live report <span aria-hidden="true">→</span></a>
-							<a href="https://github.com/FarizaZack/Fariza_R_Portfolio" target="_blank" rel="noopener">GitHub</a>
-						</div>
-					</div>
-				</article>
+			<article class="entry reveal">
+				<div class="entry__id">
+					<span class="entry__no">2.2</span>
+					<h3 class="entry__title">Credit Card Fraud Detection</h3>
+					<p class="entry__tech">R · RMarkdown</p>
+				</div>
+				<dl class="entry__facts">
+					<div><dt>Problem</dt><dd>Fraudulent transactions hide inside large volumes of card data and are hard to catch by eye.</dd></div>
+					<div><dt>Solution</dt><dd>Exploratory analysis that profiles transactions by customer behaviour, age, and location to highlight suspicious patterns.</dd></div>
+					<div><dt>Value</dt><dd>Shows how straightforward data exploration can flag the transactions worth a closer look.</dd></div>
+				</dl>
+				<p class="entry__links">
+					<a href="https://farizazack.github.io/Fariza_R_Portfolio/" target="_blank" rel="noopener">View live report →</a>
+					<a href="https://github.com/FarizaZack/Fariza_R_Portfolio" target="_blank" rel="noopener">GitHub</a>
+				</p>
+			</article>
 
-				<article class="card">
-					<div class="card__tag"><span>Data Preparation</span><em>03 / 04</em></div>
-					<div class="card__body">
-						<h3 class="card__title">SQL Data Cleaning &amp; Exploration</h3>
-						<dl class="card__facts">
-							<div><dt>Problem</dt><dd>Raw operational data like churn, HR, insurance, and supply chain is messy and inconsistent before anyone can trust it.</dd></div>
-							<div><dt>Solution</dt><dd>A set of SQL scripts that clean, standardise, and then explore each dataset to answer real questions.</dd></div>
-							<div><dt>Value</dt><dd>Turns messy tables into query-ready data and clear, repeatable answers.</dd></div>
-						</dl>
-						<p class="card__tech">SQL · SQL Server</p>
-						<div class="card__links">
-							<a href="https://github.com/FarizaZack/Fariza_Portfolio" target="_blank" rel="noopener">View on GitHub <span aria-hidden="true">→</span></a>
-						</div>
-					</div>
-				</article>
+			<article class="entry reveal">
+				<div class="entry__id">
+					<span class="entry__no">2.3</span>
+					<h3 class="entry__title">SQL Data Cleaning &amp; Exploration</h3>
+					<p class="entry__tech">SQL · SQL Server</p>
+				</div>
+				<dl class="entry__facts">
+					<div><dt>Problem</dt><dd>Raw operational data like churn, HR, insurance, and supply chain is messy and inconsistent before anyone can trust it.</dd></div>
+					<div><dt>Solution</dt><dd>A set of SQL scripts that clean, standardise, and then explore each dataset to answer real questions.</dd></div>
+					<div><dt>Value</dt><dd>Turns messy tables into query-ready data and clear, repeatable answers.</dd></div>
+				</dl>
+				<p class="entry__links">
+					<a href="https://github.com/FarizaZack/Fariza_Portfolio" target="_blank" rel="noopener">View on GitHub →</a>
+				</p>
+			</article>
 
-				<article class="card">
-					<div class="card__tag"><span>Reporting &amp; Visualization</span><em>04 / 04</em></div>
-					<div class="card__body">
-						<h3 class="card__title">Interactive Dashboards</h3>
-						<dl class="card__facts">
-							<div><dt>Problem</dt><dd>Stakeholders need to see trends quickly, without digging through spreadsheets.</dd></div>
-							<div><dt>Solution</dt><dd>Interactive dashboards published on Tableau Public that let people explore the numbers themselves.</dd></div>
-							<div><dt>Value</dt><dd>Makes trends and outliers obvious at a glance and cuts down manual reporting.</dd></div>
-						</dl>
-						<p class="card__tech">Tableau</p>
-						<div class="card__links">
-							<a href="https://public.tableau.com/app/profile/fariza.zakaria/vizzes" target="_blank" rel="noopener">View on Tableau <span aria-hidden="true">→</span></a>
-						</div>
-					</div>
-				</article>
-
-			</div>
+			<article class="entry reveal">
+				<div class="entry__id">
+					<span class="entry__no">2.4</span>
+					<h3 class="entry__title">Interactive Dashboards</h3>
+					<p class="entry__tech">Tableau</p>
+				</div>
+				<dl class="entry__facts">
+					<div><dt>Problem</dt><dd>Stakeholders need to see trends quickly, without digging through spreadsheets.</dd></div>
+					<div><dt>Solution</dt><dd>Interactive dashboards published on Tableau Public that let people explore the numbers themselves.</dd></div>
+					<div><dt>Value</dt><dd>Makes trends and outliers obvious at a glance and cuts down manual reporting.</dd></div>
+				</dl>
+				<p class="entry__links">
+					<a href="https://public.tableau.com/app/profile/fariza.zakaria/vizzes" target="_blank" rel="noopener">View on Tableau →</a>
+				</p>
+			</article>
 		</section>
 
 		<!-- What I Build -->
 		<section class="section" id="build">
-			<div class="section__head">
-				<span class="section__num">03.</span>
-				<h2>What I Build</h2>
+			<div class="section__head reveal">
+				<span class="section__num">03</span>
+				<span class="section__label">What I build</span>
 			</div>
-			<p class="section__lede">The kinds of solutions I enjoy working on:</p>
+			<p class="section__lede reveal">The kinds of solutions I enjoy working on:</p>
 			<div class="build">
-				<div class="build__item"><h4>Finance workflow automation</h4><p>Taking the manual, repetitive steps in finance work and automating them.</p></div>
-				<div class="build__item"><h4>Internal business applications</h4><p>Small, practical apps that fit the way a team actually works.</p></div>
-				<div class="build__item"><h4>Interactive dashboards</h4><p>Clear views of the numbers that matter, without the spreadsheet wrangling.</p></div>
-				<div class="build__item"><h4>Reporting automation</h4><p>Turning recurring reports into a few clicks instead of hours of work.</p></div>
-				<div class="build__item"><h4>Data transformation</h4><p>Cleaning and reshaping messy data into something usable and trustworthy.</p></div>
-				<div class="build__item"><h4>Process improvement</h4><p>Finding the slow, error-prone steps and making them simpler.</p></div>
-				<div class="build__item"><h4>AI-assisted business solutions</h4><p>Using modern AI tools to design, build, and document internal tools faster.</p></div>
+				<div class="build__item reveal"><h4>Finance workflow automation</h4><p>Taking the manual, repetitive steps in finance work and automating them.</p></div>
+				<div class="build__item reveal"><h4>Internal business applications</h4><p>Small, practical apps that fit the way a team actually works.</p></div>
+				<div class="build__item reveal"><h4>Interactive dashboards</h4><p>Clear views of the numbers that matter, without the spreadsheet wrangling.</p></div>
+				<div class="build__item reveal"><h4>Reporting automation</h4><p>Turning recurring reports into a few clicks instead of hours of work.</p></div>
+				<div class="build__item reveal"><h4>Data transformation</h4><p>Cleaning and reshaping messy data into something usable and trustworthy.</p></div>
+				<div class="build__item reveal"><h4>Process improvement</h4><p>Finding the slow, error-prone steps and making them simpler.</p></div>
+				<div class="build__item reveal"><h4>AI-assisted business solutions</h4><p>Using modern AI tools to design, build, and document internal tools faster.</p></div>
 			</div>
 		</section>
 
 		<!-- Skills -->
 		<section class="section" id="skills">
-			<div class="section__head">
-				<span class="section__num">04.</span>
-				<h2>Skills &amp; Tools</h2>
+			<div class="section__head reveal">
+				<span class="section__num">04</span>
+				<span class="section__label">Skills &amp; tools</span>
 			</div>
-			<p class="section__lede">The technologies behind the solutions above:</p>
+			<p class="section__lede reveal">The technologies behind the solutions above:</p>
 			<div class="skills">
-				<div class="skills__group">
-					<h4>Finance &amp; Business</h4>
+				<div class="skills__group reveal">
+					<h4><span>4.1</span> Finance &amp; Business</h4>
 					<ul>
 						<li>Financial reporting</li>
 						<li>Budget tracking</li>
@@ -194,8 +208,8 @@
 						<li>MIA member</li>
 					</ul>
 				</div>
-				<div class="skills__group">
-					<h4>Data &amp; Analytics</h4>
+				<div class="skills__group reveal">
+					<h4><span>4.2</span> Data &amp; Analytics</h4>
 					<ul>
 						<li>Excel</li>
 						<li>Power Query</li>
@@ -205,8 +219,8 @@
 						<li>R / RMarkdown</li>
 					</ul>
 				</div>
-				<div class="skills__group">
-					<h4>Automation &amp; Development</h4>
+				<div class="skills__group reveal">
+					<h4><span>4.3</span> Automation &amp; Development</h4>
 					<ul>
 						<li>Python</li>
 						<li>Flask</li>
@@ -216,8 +230,8 @@
 						<li>AI-assisted development</li>
 					</ul>
 				</div>
-				<div class="skills__group">
-					<h4>Tools &amp; Platforms</h4>
+				<div class="skills__group reveal">
+					<h4><span>4.4</span> Tools &amp; Platforms</h4>
 					<ul>
 						<li>GitHub</li>
 						<li>Git</li>
@@ -229,33 +243,74 @@
 		</section>
 
 		<!-- Contact -->
-		<section class="section" id="contact">
-			<div class="section__head">
-				<span class="section__num">05.</span>
-				<h2>Contact</h2>
-			</div>
-			<div class="contact">
-				<p class="contact__lead">Have a finance or business process that could be simpler? I'd be glad to talk.</p>
-				<div class="contact__actions">
-					<a class="btn btn--solid" href="mailto:nfarizazakaria@gmail.com">Email me</a>
-					<a class="btn" href="https://www.linkedin.com/in/fariza-z-90b04b1b0/" target="_blank" rel="noopener">LinkedIn</a>
+		<section class="dark" id="contact">
+			<div class="dark__inner">
+				<div class="section__head section__head--dark reveal">
+					<span class="section__num">05</span>
+					<span class="section__label">Contact</span>
 				</div>
-				<ul class="contact__meta">
-					<li><span>Location</span> Kuala Lumpur, Malaysia</li>
-					<li><span>Email</span> <a href="mailto:nfarizazakaria@gmail.com">nfarizazakaria@gmail.com</a></li>
-					<li><span>GitHub</span> <a href="https://github.com/FarizaZack" target="_blank" rel="noopener">@FarizaZack</a></li>
-				</ul>
+				<div class="contact">
+					<div class="contact__main">
+						<h2 class="contact__lead reveal">Have a finance or business process that could be <em>simpler?</em></h2>
+						<p class="contact__sub reveal">I'd be glad to talk.</p>
+						<div class="contact__actions reveal">
+							<a class="btn btn--ivory" href="mailto:nfarizazakaria@gmail.com">Email me</a>
+							<a class="btn btn--ghost" href="https://www.linkedin.com/in/fariza-z-90b04b1b0/" target="_blank" rel="noopener">LinkedIn</a>
+						</div>
+						<ul class="contact__meta reveal">
+							<li><span>Location</span> Kuala Lumpur, Malaysia</li>
+							<li><span>Email</span> <a href="mailto:nfarizazakaria@gmail.com">nfarizazakaria@gmail.com</a></li>
+							<li><span>GitHub</span> <a href="https://github.com/FarizaZack" target="_blank" rel="noopener">@FarizaZack</a></li>
+							<li><span>Resume</span> <a href="mailto:nfarizazakaria@gmail.com?subject=Resume%20request">Available on request</a></li>
+						</ul>
+					</div>
+					<aside class="lanyardwrap reveal" aria-label="Profile card and education">
+						<div class="lanyard" id="lanyard">
+							<div class="lanyard__swing" id="lanyardSwing">
+								<span class="lanyard__strap" aria-hidden="true"><i>FINANCE · DATA · AUTOMATION ·&nbsp;</i></span>
+								<span class="lanyard__clip" aria-hidden="true"></span>
+								<button class="card3d" id="flipCard" type="button" aria-pressed="false"
+									aria-label="Profile card: Fariza Zakaria, Chartered Accountant. Activate to flip to the education side.">
+									<span class="card3d__inner">
+										<span class="card3d__face card3d__front">
+											<span class="badge__slot" aria-hidden="true"></span>
+											<img class="badge__photo" src="assets/fariza-badge.jpg" alt="Portrait of Fariza Zakaria" loading="lazy" width="640" height="800" />
+											<span class="badge__meta">
+												<strong>Fariza Zakaria</strong>
+												<span>Chartered Accountant (MIA)</span>
+												<span class="badge__tags">Finance · Data · Automation</span>
+											</span>
+										</span>
+										<span class="card3d__face card3d__back">
+											<span class="badge__slot" aria-hidden="true"></span>
+											<img class="card3d__crest" src="assets/iium-emblem.png" alt="Emblem of the International Islamic University Malaysia" loading="lazy" width="500" height="500" />
+											<span class="badge__meta">
+												<strong>IIUM</strong>
+												<span>International Islamic University Malaysia</span>
+												<span class="badge__tags">Bachelor of Accounting</span>
+											</span>
+										</span>
+									</span>
+								</button>
+							</div>
+							<p class="lanyard__hint">Tap to flip · drag to swing</p>
+						</div>
+						<ul class="eduinfo">
+							<li><span>University</span> International Islamic University Malaysia (IIUM)</li>
+							<li><span>Qualification</span> Bachelor of Accounting</li>
+							<li><span>Professional membership</span> Malaysian Institute of Accountants (MIA)</li>
+						</ul>
+					</aside>
+				</div>
+				<footer class="foot">
+					<p>© Fariza Zakaria · All rights reserved.</p>
+					<a href="#top" class="foot__up">Back to top ↑</a>
+				</footer>
 			</div>
 		</section>
 
 	</main>
 
-	<footer class="foot">
-		<p>© 2026 Fariza Zakaria · Built with HTML &amp; CSS</p>
-		<span class="foot__mark" aria-hidden="true"><i></i><i></i><i></i></span>
-		<a href="#top" class="foot__up">Back to top ↑</a>
-	</footer>
-
-	<script src="script.js"></script>
+	<script src="script.js?v=2026-ledger"></script>
 </body>
 </html>
